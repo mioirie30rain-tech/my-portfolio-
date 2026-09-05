@@ -1,0 +1,268 @@
+ <!DOCTYPE html>
+<html lang="ja">
+  <head>
+
+    <!-- 文字コード！-->
+    <meta charset="UTF-8">
+
+  	<!-- ブラウザで表示されるタイトル !-->
+    <title>TSUTSUMU株式会社　採用サイト</title>
+
+    <!-- スタイルシート -->
+    <link href="assets/css/reset.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- 表示領域をデバイス依存にする、viewportを設定する -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0,viewport-fit=cover">
+
+
+    <!-- jQueryの読み込み -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+    <script type="text/javascript">
+      //jQueryの記述をここに書く
+        //スクロールすると上部に固定させるための設定を関数でまとめる
+        function FixedAnime() {
+          var headerH = $('#header').outerHeight(true);
+          var scroll = $(window).scrollTop();
+          if (scroll >= headerH){//headerの高さ以上になったら
+              $('#header').addClass('fixed');//fixedというクラス名を付与
+            }else{//それ以外は
+              $('#header').removeClass('fixed');//fixedというクラス名を除去
+            }
+        }
+
+      // 画面をスクロールをしたら動かしたい場合の記述
+      $(window).scroll(function () {
+        FixedAnime();/* スクロール途中からヘッダーを出現させる関数を呼ぶ*/
+      });
+    </script>
+
+  </head>
+
+
+  <body>
+    <header id="header">
+      <h1>
+        <a href="index.html">
+          <img src="assets/images/logo_mv.png" alt="TSUTSUMU株式会社">
+        </a>
+      </h1>
+      <nav class="gnav-pc-wrap">
+        <ul id="g-navi">
+          <li><a href="#about">私たちについて</a></li>
+          <li><a href="#company">事業について</a></li>
+          <li><a href="#interview">メンバー紹介</a></li>
+          <li><a href="#environment">働く環境</a></li>
+          <li><a href="#job">募集職種</a></li>
+        </ul>
+      </nav>
+      <div id="menu-button">
+        <div class="memu-button-inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <div class="first-v"><!-- ファーストビュー -->
+      <img src="assets/images/mv_pc.jpg" alt="" class="mv-pc">
+      <img src="assets/images/mv_sp.jpg" alt="" class="mv-sp">
+      <img src="assets/images/entry_now.png" alt="今すぐエントリーする" class="entry_now">
+    </div>
+
+    <section id="about">
+      <h2>私たちについて</h2>
+      <img src="assets/images/dot_line01_01.png" alt="" class="dot_line">
+      <p class="large">TSUTUMUでは、あかちゃんがやさしさにつつまれて<br class="br-sp">
+        安心できるような暮らしのための商品開発に取り組んできました。<br class="br-sp">
+        また、これからはあかちゃんだけでなくママやパパ、
+        おじいちゃんおばあちゃんまで家族みんなが<br class="br-sp">やさしく幸せに暮らせるような世界を創り出していくことがわたしたちの使命だと考えています。<br class="br-sp">
+        もっともっとやさしさでつつまれる世界を目指して。
+      </p>
+      <a href="#" class="button">もっと見る</a>
+    </section>
+
+    <section id="company">
+      <h2>事業について</h2>
+      <img src="assets/images/dot_line01_01.png" alt="" class="dot_line">
+      <p>TSUTSUMUではあかちゃんだけでなく、<br class="br-sp">家族みんなが幸せになることを目指した事業の展開をしています。</p>
+    
+      <div class="col-3">
+        <div class="item">
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/business01.jpg" alt="ベビー用品開発事業">
+            </div>
+            <h3>ベビー用品開発事業</h3>
+            <p class="small">普段使用する衣類や消耗品を始め、知育玩具など、あかちゃんの安心安全な成長をサポートする商品の開発に取り組んでいます。</p>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/business02.jpg" alt="フォトブック事業">
+            </div>
+            <h3>フォトブック事業</h3>
+            <p class="small">大切な家族の記録をアプリとの連携で簡単に整理、共有できるフォトブックのサービス開発に取り組んでいます。</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card">
+            <div class="card-img">
+              <img src="assets/images/business03.jpg" alt="コミュニティ事業">
+            </div>
+            <h3>コミュニティ事業</h3>
+            <p class="small">ママ同士の繋がりをつくり、育児の悩みや疑問を解消することのできるコミュニティーサービスの開発に取り組んでいます。</p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">もっと見る</a>
+    </section>
+      
+
+    <section id="interview">
+      <h2>メンバー紹介</h2>
+      <img src="assets/images/dot_line01_01.png" alt="" class="dot_line">
+      <p>TSUTSUMUではそれぞれの得意に合わせて活躍できる場が様々あります。<br class="br-sp">各領域でそれぞれの個性を活かし活躍するメンバーの紹介です。</p>
+
+      <div class="col-2 employee_pc">
+        <div class="item-employee">
+          <img src="assets/images/employee1.png" alt="">
+        </div>
+        <div class="item-employee">
+          <img src="assets/images/employee2.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-2 employee_pc">
+        <div class="item-employee">
+          <img src="assets/images/employee3.png" alt="">
+        </div>
+        <div class="item-employee">
+          <img src="assets/images/employee4.png" alt="">
+        </div>
+      </div>
+
+      <div class="col-2 employee_sp">
+        
+      </div>
+      <a href="#" class="button">もっと見る</a>
+    </section>
+
+    <section id="job">
+      <h2>募集職種</h2>
+      <img src="assets/images/dot_line01_01.png" alt="" class="dot_line">
+      <p>TSUTSUMUでは新卒/既卒を問わず、様々な職種の人材を積極的に募集しております。<br class="br-sp">
+        TSUTSUMUが目指す世界に共感し、その実現を本気で一緒に目指せる方、<br class="br-sp">自身のバリューを思う存分に発揮されたい方のご応募をお待ちしております。
+      </p>
+      <div class="job-cal2">
+        <div class="job-image">
+          <img src="assets/images/job.png" alt="募集職種">
+        </div>
+
+        <div>
+          <ul class="job">
+            <li class="job-item">エンジニア</li>
+            <li class="job-item">ディレクター</li>
+            <li class="job-item">UIUXデザイナー</li>
+
+            <li class="job-item">マーケター</li>
+            <li class="job-item">カスタマーサポート</li>
+          </ul>
+          <a href="#" class="button">もっと見る</a>
+        </div>
+      </div>
+    </section>
+
+     
+    <section id="environment">
+      <h2>働く環境</h2>
+      <img src="assets/images/dot_line01_01.png" alt="" class="dot_line">
+      <p>TSUTSUMUでは、多種多様な働きかたに合わせて<br class="br-sp">
+        個人がバリューを発揮できるような働き方のサポートを多数用意しております。
+      </p>
+      <div class="col-3">
+        <div class="item">
+          <div class="card">
+            <h3>リモートワーク</h3>
+            <div class="card-img-environment">
+              <img src="assets/images/environment01.png" alt="リモートワーク">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <h3>社内託児所</h3>
+            <div class="card-img-environment">
+              <img src="assets/images/environment02.png" alt="社内託児所">
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card">
+            <h3>フレックスタイム制</h3>
+            <div class="card-img-environment">
+              <img src="assets/images/environment03.png" alt="フレックスタイム制">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="button">もっと見る</a>
+    </section>
+
+    <section id="entry">
+      <div class="col-3-entry">
+      <img src="assets/images/entry01.png" alt="">
+      <div class="entry-text">
+        <h2 >私たちと一緒に働きませんか？</h2>
+        <a href="#" class="button">エントリーする</a>
+      </div>
+      <img src="assets/images/entry02.png" alt="">
+    </div>
+    </section>
+
+
+    <footer id="footer">
+      <div class="footer-col-2">
+        <div class="footer-left">
+          <img src="assets/images/logo_footer.png" alt="TSUTSUMU">
+          <p class="copyright">© 2023 TSUTSUMU inc.</p>
+        </div>
+        <ul class="footer">
+          <li>
+            <a target="_blank" href="#">会社概要</a>
+          </li>
+          <li>
+            <a target="_blank" href="#">プライバシーポリシー</a>
+          </li>
+          <li>
+            <a target="_blank" href="#">特定商取引法に基づく表示</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+      const menuBtn = document.getElementById('menu-button');
+      const nav = document.querySelector('nav');
+    
+      menuBtn.addEventListener('click', function() {
+        menuBtn.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+    </script>
+  </body>
+
+
+
+</html>
